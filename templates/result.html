@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Records</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th, td {
+            text-align: left;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Top Performers in {{ month }} {{ year }}</h1>
+
+    <table>
+        <tr>
+            <th>Office ID</th>
+            <th>Saleperson</th>
+            <th>Total Amount S$</th>
+        </tr>
+
+        {% for officeID, personInfo in data.items() %}
+        <tr>
+            <td>{{ officeID }}</td>
+            <td>{{ personInfo['name'] }}</td>
+            <td>{{ personInfo['total'] }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>
