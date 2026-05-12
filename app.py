@@ -105,10 +105,10 @@ def process_form():
     '''
         
     db.close()
-    return render_template('result.html',
+    return flask.render_template('result.html',
                            data = maxPerOffice,
                            year = data['year'],
                            month = numToStrMonth(int(data['month'])))
 
 # to be removed if running from GitHub + Render
-app.run()
+#app.run()
