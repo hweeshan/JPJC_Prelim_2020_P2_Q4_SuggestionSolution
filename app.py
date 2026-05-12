@@ -110,9 +110,4 @@ def process_form():
                            year = data['year'],
                            month = numToStrMonth(int(data['month'])))
 
-
-### only for running on repl.it
-app.run('0.0.0.0', 8080)
-
-### use this to run on your local machine
 #app.run()
