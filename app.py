@@ -110,4 +110,5 @@ def process_form():
                            year = data['year'],
                            month = numToStrMonth(int(data['month'])))
 
-#app.run()
+# to be removed if running from GitHub + Render
+app.run()
