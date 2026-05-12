@@ -111,4 +111,4 @@ def process_form():
                            month = numToStrMonth(int(data['month'])))
 
 # to be removed if running from GitHub + Render
-#app.run()
+app.run()
